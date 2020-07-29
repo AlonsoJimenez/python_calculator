@@ -2,11 +2,12 @@ import json
 import datetime
 
 
+
+
 def handler(event, context):
     data = {
-        'output': 'Hello World',
-        'timestamp': datetime.datetime.utcnow().isoformat()
+        "<html><head><title>Presiona el boton para el proximo numero de Fibonacci</title></head></html>"
     }
     return {'statusCode': 200,
-            'body': json.dumps(data),
-            'headers': {'Content-Type': 'application/json'}}
+            'body': data,
+            'headers': {'Content-Type': 'text/html'}}
