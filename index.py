@@ -1,13 +1,13 @@
-import json
+import html
 import datetime
 
 
 
 
 def handler(event, context):
-    data = {
+    data = 
         "<html><head><title>Presiona el boton para el proximo numero de Fibonacci</title></head></html>"
-    }
+    
     return {'statusCode': 200,
-            'body': data,
+            'body': data
             'headers': {'Content-Type': 'text/html'}}
